@@ -119,7 +119,7 @@ function updateScoreDisplay() {
 
 function updateMatchHistory() {
   let userChoiceImage = new Image();
-  userChoiceImage.src = `/images/${userChoice}.png`;
+  userChoiceImage.src = `./images/${userChoice}.png`;
   userChoiceImage.width = 50;
   userChoiceImage.height = 50;
   userChoiceImage.onload = function () {
@@ -128,7 +128,7 @@ function updateMatchHistory() {
   };
 
   let computerChoiceImage = new Image();
-  computerChoiceImage.src = `/images/${computerChoice}.png`;
+  computerChoiceImage.src = `./images/${computerChoice}.png`;
   computerChoiceImage.width = 50;
   computerChoiceImage.height = 50;
   computerChoiceImage.onload = function () {
