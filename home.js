@@ -35,9 +35,9 @@ function handleChoice(e) {
     generateCompChoice();
     compareChoices();
 
-    computerPick.innerHTML = `<img class="animate__animated animate__bounceIn" width="250" height="250" src="/images/${computerChoice}.png">`;
+    computerPick.innerHTML = `<img class="animate__animated animate__bounceIn" width="250" height="250" src="./images/${computerChoice}.png">`;
 
-    userPick.innerHTML = `<img class="animate__animated animate__bounceIn" width="250" height="250" src="/images/${userChoice}.png">`;
+    userPick.innerHTML = `<img class="animate__animated animate__bounceIn" width="250" height="250" src="./images/${userChoice}.png">`;
     // displayResult.innerHTML = result;
 
     // if (userScore === 3 || computerScore === 3) {
