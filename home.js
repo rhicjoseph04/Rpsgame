@@ -70,10 +70,23 @@ function handleGameOver() {
   // Optionally, you can reset the background music to the beginning
   bgMusic.currentTime = 0;
  
-
-  alert(message);
+  Swal.fire({
+    title: message,
+    icon: userScore === 3 ? 'success' : 'error',
+    background: 'radial-gradient(circle, #65D7D3, #1769aa)',
+    confirmButtonText: 'Play Again',
+    customClass: {
+      title: 'swal-title', // CSS class for the title
+      content: 'swal-content' // CSS class for the content
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      resetGame();
+    }
+  });
+  
   playGameOverSound();
-  document.getElementById('playAgain').style.display = 'block';  
+  // document.getElementById('playAgain').style.display = 'block';  
 }
 
 // function handleGameOver() {
@@ -119,7 +132,7 @@ function updateScoreDisplay() {
 
 function updateMatchHistory() {
   let userChoiceImage = new Image();
-  userChoiceImage.src ="./images/${userChoice}.png";
+  userChoiceImage.src =`./images/${userChoice}.png`;
   userChoiceImage.width = 50;
   userChoiceImage.height = 50;
   userChoiceImage.onload = function () {
@@ -128,7 +141,7 @@ function updateMatchHistory() {
   };
 
   let computerChoiceImage = new Image();
-  computerChoiceImage.src ="./images/${computerChoice}.png";
+  computerChoiceImage.src =`./images/${computerChoice}.png`;
   computerChoiceImage.width = 50;
   computerChoiceImage.height = 50;
   computerChoiceImage.onload = function () {

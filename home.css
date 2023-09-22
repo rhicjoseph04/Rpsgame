@@ -7,8 +7,7 @@
 }
 
 body {
-  background: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
-
+  background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 22, 58, 1) 100%);
   height: 100%;
   background-position: center;
   background-size: cover;
@@ -20,6 +19,7 @@ body {
   min-height: 100vh;
   font-family: 'Comic Neue', cursive;
   color: white; /* Text color */
+  
 }
 
 .centered-logo h1 {
@@ -36,6 +36,7 @@ body {
   margin-bottom: 20px;
   opacity: 0.9;
  width:100%;
+ position:sticky;
 
   
 }
@@ -46,6 +47,8 @@ body {
   width: 100%;
   transition: transform 0.3s ease, opacity 0.7s ease;
   opacity: 0.7;
+  border-radius: 20px;
+
 }
 
 .centered-logo:hover img {
@@ -61,8 +64,8 @@ body {
   transition: all 0.3s ease-in-out;
 
 }
-
-.word:hover {  font-family: 'Bangers', cursive;
+.word:hover {  
+  text-shadow: #dee776 solid;
   transform: scale(1.2);
 }
 
@@ -74,6 +77,7 @@ h1 {
   color: #ffffff; /* Heading color */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
 
 
 
@@ -112,20 +116,26 @@ h1 {
  
 /* Style for the button */
 .options3 {
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.831);
-  transition: transform 0.3s, box-shadow 0.3s;
-  background: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
-}
+ border:#dee776 solid;
+ cursor: pointer;
+ border-radius: 50px;
+ padding: 30px;
+ margin: 20px;
+ box-shadow: 0 8px 16px rgb(238, 238, 62);
+ transition: transform 0.3s, box-shadow 0.3s;
+ background: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 50px;
+ height: 50px;
+ margin-right: 10px;
 
+}
 /* Hover effect */
 .options3:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgb(236, 237, 241);
+  box-shadow: 0 12px 20px rgb(236, 228, 4);
 }
 
 /* Hover effect for the inner content */
@@ -138,15 +148,6 @@ h1 {
 button img {
   width: 100px;
   height: 100px;
-}
-
-/* Adjusted spacing between game buttons */
-.options3 {
-  transition: transform 0.2s;
-  border: 3px solid;
-  border-radius: 50px;
-  box-shadow: 0px 3px 5px;
-  margin: 5px;
 }
 
 .container{
@@ -164,22 +165,24 @@ button img {
 
 }
 .game-section {
-  background: radial-gradient(circle, rgba(255, 255, 204, 0.9), rgba(255, 235, 59, 0.5));
+  background: radial-gradient(circle, #65D7D3, #1769aa);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.831);
+ 
 }
 
 
 #scoreboard-container {
-  background: radial-gradient(circle, rgba(255, 255, 204, 0.9), rgba(255, 235, 59, 0.5));
+  background: radial-gradient(circle, #65D7D3, #1769aa);
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.831);
   color:black;
+
 }
 
 .section-title {
@@ -202,21 +205,23 @@ button img {
 
 /* Adjusted match history styles */
 #match-history-container {
-  background: radial-gradient(circle, rgba(255, 255, 204, 0.9), rgba(255, 235, 59, 0.5));
+  background: radial-gradient(circle, #65D7D3, #1769aa);
   background-repeat: no-repeat;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-top: 20px;
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.831);
   color:black;
+  border-color: black solid;
+
 }
 
 .section-title {
   font-family: 'Bangers', cursive;
-  color: black; /* Replace with your desired color */
+  color: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
   margin-bottom: 20px;
-background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+
 }
 
 .scoreboard {
@@ -237,16 +242,21 @@ background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5
 }
 
 .button-container button {
-  width: 50px; /* Adjust the width based on the icon */
-  height: 50px; /* Adjust the height based on the icon */
-  background: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
-  border: none;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border:#dee776 solid;
   cursor: pointer;
+  border-radius: 50px;
+  padding: 30px;
+  margin: 20px;
+  box-shadow: 0 8px 16px rgb(238, 238, 62);
   transition: transform 0.3s, box-shadow 0.3s;
+  background: radial-gradient(circle, rgba(212, 18, 18, 0.928), rgba(32, 8, 75, 0.928));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+margin-right: 10px;
+
 }
 
 .button-container button img {
@@ -256,6 +266,7 @@ background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5
 
 .button-container button:hover {
   transform: scale(1.1);
+  box-shadow: 0 12px 20px rgb(236, 228, 4);
 }
 
 .button-container button:active {
@@ -263,8 +274,6 @@ background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5
   background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   color: black;
 }
-
-
 
 
 #playAgain {
@@ -297,12 +306,20 @@ background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5
 
 
 .footer {
-  background: radial-gradient(circle, rgba(100, 0, 100, 0.5), rgba(0, 0, 0, -0.5)); 
-  padding: 20px 0;
-  text-align: center;
- max-width:100%;
-  justify-content: center;
+background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(26, 22, 58, 1) 100%);
+padding: 40px 0;
+text-align: center;
+max-width:100%;
+justify-content: center;
  margin-bottom: 0;
+position:static;
+ left:0;
+ width:100%;
+ bottom:0;
+ color:#fff;
+ margin-top:50px;
+ margin-bottom:-50px;
+ 
 }
 
 /* Adjusted footer text */
@@ -320,3 +337,12 @@ background-color:  radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5
 .footer-text a:hover {
   text-decoration: underline;
 }
+
+.swal-title {
+  color: white;
+}
+
+.swal-content {
+  color: white;
+}
+
